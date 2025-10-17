@@ -1,4 +1,11 @@
 -- Disable Netrw
+
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+})
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.env.PATH = '/usr/local/texlive/2025/bin/x86_64-linux:' .. vim.env.PATH
